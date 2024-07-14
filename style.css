@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+}
+
+.lofi {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+    width: 99vw;
+    height: 99vh;
+}
