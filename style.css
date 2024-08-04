@@ -2,13 +2,158 @@
 
 * {
     margin: 0%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;   
 }
 
 .lofi {
+    background-image: url(lofi.gif);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
 
-    width: 99vw;
-    height: 99vh;
+    width: 100vw;
+    height: 100vh;
+
 }
+
+.cromometro {
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+    top: 40px;
+    margin-left: -10px;
+    border-radius: 50%;
+
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    background: rgba(0, 0, 0, 0.51);
+}  
+
+
+#timer {
+    color: #CA5843;
+    margin-top: 45px;
+    font-size: 35px;
+    height: 100px;
+
+
+}
+
+.button {
+    
+
+    width: 60px;
+    height: 60px;
+
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+
+    overflow: hidden;
+}
+
+svg {
+    margin-top: -20px;
+    align-items: center;
+}
+
+.button svg {
+  display: block;
+  height: auto;
+  border: none; 
+
+  transition: transform 0.3s
+}
+
+svg:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1200px) {
+    .cromometro {
+        width: 200px;
+        height: 200px;
+        top: 95px;
+    }
+    
+    #timer {
+        font-size: 30px;
+    }
+
+    .button {
+        width: 50px;
+        height: 50px;
+    }
+
+    svg {
+        margin-top: -15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cromometro {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #timer {
+        font-size: 25px;
+    }
+
+    .button {
+        width: 40px;
+        height: 40px;
+    }
+
+    svg {
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cromometro {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #timer {
+        font-size: 30px;
+    }
+
+    .button {
+        width: 30px;
+        height: 30px;
+    }
+
+    svg {
+        margin-top: -2px;
+        width: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
